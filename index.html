@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f2">
+    <meta name="description" content="The student portfolio of Tran Hoang Dang Quang, an Information Assurance student at FPT University.">
+    <title>Tran Hoang Dang Quang | Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Dang Quang, home">DQ<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-contact" href="mailto:dangquang14406@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> FPT UNIVERSITY STUDENT</p>
+          <h1 id="hero-title">Hello, I'm<br><span>Trần Hoàng</span><br>Đăng Quang<span class="period">.</span></h1>
+          <p class="hero-summary">Information Assurance student, curious builder, and believer in learning by making.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note"><span class="note-line" aria-hidden="true"></span> Currently exploring Java, Python &amp; SQL</p>
+        </div>
+
+        <figure class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="A student working on a laptop at a bright desk" fetchpriority="high">
+          <figcaption><span>IN THE MAKING</span><span>Curiosity, meet code.</span></figcaption>
+          <div class="visual-stamp" aria-hidden="true">LEARN<br>BUILD<br>REPEAT<span>✳</span></div>
+        </figure>
+        <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+          <h2 id="about-title">Good code starts<br>with <span>curiosity.</span></h2>
+        </div>
+        <div class="about-content">
+          <p class="about-lead">I'm a student at FPT University studying Information Assurance. I'm building a strong foundation in programming and security, one thoughtful project at a time.</p>
+          <p class="about-copy">I enjoy understanding how things work, asking better questions, and turning what I learn into something useful. Outside of class, you'll find me gaming, out for a jog, or trying a new recipe.</p>
+          <dl class="quick-facts">
+            <div><dt>STUDYING</dt><dd>Information Assurance</dd></div>
+            <div><dt>UNIVERSITY</dt><dd>FPT University</dd></div>
+            <div><dt>OFF THE CLOCK</dt><dd>Gaming · Jogging · Cooking</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-wrap skills-inner">
+          <div class="section-heading">
+            <p class="eyebrow">02 / WHAT I'M LEARNING</p>
+            <h2 id="skills-title">Tools in my<br><span>toolbox.</span></h2>
+          </div>
+          <div class="skills-content">
+            <p class="skills-intro">A growing set of skills, built through coursework and hands-on practice.</p>
+            <ul class="skill-list" aria-label="Technical skills">
+              <li><span class="skill-index">01</span><span>Java</span><span class="skill-type">PROGRAMMING</span></li>
+              <li><span class="skill-index">02</span><span>Python</span><span class="skill-type">PROGRAMMING</span></li>
+              <li><span class="skill-index">03</span><span>SQL</span><span class="skill-type">DATABASES</span></li>
+              <li><span class="skill-index">04</span><span>Information Assurance</span><span class="skill-type">STUDYING</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section section-wrap" id="projects" aria-labelledby="projects-title">
+        <div class="projects-top">
+          <div class="section-heading">
+            <p class="eyebrow">03 / SELECTED EXERCISES</p>
+            <h2 id="projects-title">Learning by<br><span>doing.</span></h2>
+          </div>
+          <p class="projects-intro">Sample project concepts for Java, Python, and SQL. Swap in your own builds as you go.</p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter projects by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>03</span></button>
+          <button class="filter-button" type="button" data-filter="java" aria-pressed="false">Java</button>
+          <button class="filter-button" type="button" data-filter="python" aria-pressed="false">Python</button>
+          <button class="filter-button" type="button" data-filter="sql" aria-pressed="false">SQL</button>
+        </div>
+        <p class="filter-status" aria-live="polite"></p>
+
+        <ul class="project-grid">
+          <li class="project-card" data-category="java">
+            <button class="project-open" type="button" aria-haspopup="dialog" aria-label="View details for Campus Course Planner">
+              <span class="project-art art-java" aria-hidden="true">
+                <span class="art-window"><span class="window-dots"><i></i><i></i><i></i></span><span class="art-code"><b>class</b> StudyPlan {<br>&nbsp; List&lt;Course&gt; week;<br>&nbsp; <em>plan</em>.organize();<br>}</span></span>
+                <span class="art-label">JAVA / 01</span>
+              </span>
+              <span class="project-meta"><span class="project-category">JAVA · PRACTICE</span><span class="project-arrow" aria-hidden="true">↗</span></span>
+              <span class="project-title">Campus Course Planner</span>
+              <span class="project-description">A simple way to organize a busy study week.</span>
+            </button>
+          </li>
+          <li class="project-card" data-category="python">
+            <button class="project-open" type="button" aria-haspopup="dialog" aria-label="View details for Everyday Expense Tracker">
+              <span class="project-art art-python" aria-hidden="true">
+                <span class="expense-card"><span>THIS MONTH</span><strong>$248.50</strong><span class="expense-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+                <span class="art-label">PYTHON / 02</span>
+              </span>
+              <span class="project-meta"><span class="project-category">PYTHON · PRACTICE</span><span class="project-arrow" aria-hidden="true">↗</span></span>
+              <span class="project-title">Everyday Expense Tracker</span>
+              <span class="project-description">A command-line tool for keeping spending in view.</span>
+            </button>
+          </li>
+          <li class="project-card" data-category="sql">
+            <button class="project-open" type="button" aria-haspopup="dialog" aria-label="View details for Library Database Explorer">
+              <span class="project-art art-sql" aria-hidden="true">
+                <span class="sql-sheet"><span class="sql-line"><b>SELECT</b> title, author</span><span class="sql-line"><b>FROM</b> library_books</span><span class="sql-line"><b>WHERE</b> available = 1;</span><span class="sql-result">3 rows returned <i>●</i></span></span>
+                <span class="art-label">SQL / 03</span>
+              </span>
+              <span class="project-meta"><span class="project-category">SQL · PRACTICE</span><span class="project-arrow" aria-hidden="true">↗</span></span>
+              <span class="project-title">Library Database Explorer</span>
+              <span class="project-description">A starter database for finding the next good read.</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-wrap contact-inner">
+          <div>
+            <p class="eyebrow">04 / SAY HELLO</p>
+            <h2 id="contact-title">Have a good<br>idea? <span>Let's talk.</span></h2>
+          </div>
+          <div class="contact-details">
+            <p>Always glad to meet new people, swap ideas, or talk about what we're learning.</p>
+            <a class="contact-link" href="mailto:dangquang14406@gmail.com"><span>EMAIL</span>dangquang14406@gmail.com<span aria-hidden="true">↗</span></a>
+            <a class="contact-link" href="tel:+84397294005"><span>PHONE</span>039.729.4005<span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="wordmark" href="#home" aria-label="Back to top">DQ<span>.</span></a>
+      <p>Made with curiosity by Trần Hoàng Đăng Quang</p>
+      <a class="back-top" href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <div class="dialog-topline"><span class="eyebrow">PROJECT NOTES</span><button class="dialog-close" type="button" aria-label="Close project details">×</button></div>
+      <p class="dialog-category"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div class="dialog-tools" aria-label="Project technologies"></div>
+    </dialog>
+  </body>
+</html>
