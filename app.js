@@ -6,6 +6,15 @@ const dialogTitle = document.querySelector("#dialog-title");
 const dialogDescription = document.querySelector("#dialog-description");
 const dialogCategory = document.querySelector(".dialog-category");
 const dialogTools = document.querySelector(".dialog-tools");
+const avatarImage = document.querySelector(".hero-visual img");
+
+avatarImage.addEventListener("error", () => {
+  avatarImage.hidden = true;
+});
+
+if (avatarImage.complete && avatarImage.naturalWidth === 0) {
+  avatarImage.hidden = true;
+}
 
 const projectDetails = {
   "Campus Course Planner": {
